@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Solo HTML y CSS</title>
+    <style>
+        .slider{
+            aspect-ratio: 10 / 16;
+            width: 300px;
+            position: relative;
+            display: flex;
+            overflow: scroll;
+            scroll-snap-type: x mandatory;
+
+        }
+        .slider img{
+            width: 100%;
+            left: 0;
+            position: sticky;
+            object-fit: cover;
+            border-radius: 5px;
+            scroll-snap-align: center;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <img src="1.png" alt="">
+        <img src="2.png" alt="">
+        <img src="3.png" alt="">
+        <img src="4.png" alt="">
+    </div>
+    
+</body>
+</html>
