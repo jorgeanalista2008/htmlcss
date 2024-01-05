@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Actualizado</title>
+    <style>
+        body{
+            background-color: steelblue;
+        }   
+        .foto1{
+            background-image: url('1.png');
+        }
+        .foto2{
+            background-image: url('2.png');
+        }
+        .foto3{
+            background-image: url('3.png');
+        }
+        .foto4{
+            background-image: url('4.png');
+        }
+        .slider{
+            display: flex;
+            height: 20rem;
+            gap: 1rem;
+        }
+        .slider > div{
+            flex: 1;
+            border-radius: 1rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+        }
+        .slider > div:hover {
+            flex:  5;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="imagen foto1">
+
+        </div>
+        <div class="imagen foto2">
+            
+        </div>
+        <div class="imagen foto3">
+            
+        </div>
+        <div class="imagen foto4">
+            
+        </div>
+    </div>
+</body>
+</html>
